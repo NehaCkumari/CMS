@@ -10,7 +10,7 @@ router.all('/*', (req, res, next)=>{
 
 
 router.get('/', (req, res)=>{
-    Comment.find({user: '632463ca6c4e7b5bed031a36'}).populate('user')
+    Comment.find({user: "632496c53f104c4d4bb95d50"}).populate('user')
         .then(comments=>{
         res.render('admin/comments', {comments: comments});
     });
@@ -27,7 +27,7 @@ router.post('/', (req, res)=>{
             newComment.save().then(savedComment=>{
 
                 req.flash('success_message', 'Your comment will be reviewd in a moment');
-                res.redirect(`/post/${post.id}`);
+                res.redirect(`/post/${post.slug}`);
             })
         });
     });

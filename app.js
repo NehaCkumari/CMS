@@ -104,7 +104,7 @@ app.use('/admin/comments', comments);
 const PORT = process.env.PORT || 4500;
 
 app.listen(PORT, () =>{
-    console.log(`listening to ${port}`);
+    console.log(`listening to ${PORT}`);
 }); //binds itself with the specified host and port to bind and listen for any connections. localhost/4000
 
 

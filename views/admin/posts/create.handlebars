@@ -1,0 +1,61 @@
+<h1>Create posts</h1>
+
+{{#each errors}}
+
+    <div class="alert alert-danger">
+        {{message}}
+    </div>
+    
+
+{{/each}}
+
+<form action="/admin/posts/create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="title">Title</label><br>
+        <input required name="title" type="text" class="front-control" id="title" placeholder="Enter Title" size="185">     
+
+    </div>
+
+    
+    <div class="form-group">
+       <label for="file">File</label>
+       <input type="file" name="file" class="form-control">
+   </div>
+
+    <div class="form-group">
+        <label form="category">Category</label><br>
+        <select name="category" id="category" class="front-control">
+            
+            {{#each categories}}
+                <option value="{{id}}">{{name}}</option>
+            {{/each}}
+            
+        </select>
+    </div>
+
+    
+    <div class="form-group">
+        <label form="status">Status</label><br>
+        <select name="status" id="status" class="front-control">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            <option value="draft">Draft</option>
+        </select>
+    </div>
+    <div class="form-check">
+        <label for="allowComments">
+        <input name="allowComments" type="checkbox" class="front-check-input" id="allowComments"> 
+        Allow Comments    
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="body">Body</label><br>
+        <textarea required name="body" cols="185" rows="10" type="text" class="front-control" id="body" placeholder="Enter Description"></textarea>    
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Post
+
+    </button>
+
+</form>

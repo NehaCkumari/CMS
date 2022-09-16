@@ -1,16 +1,19 @@
 {
-  "name": "cms",
+  "name": "yes",
   "version": "1.0.0",
   "description": "A CMS project",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
+  
   "keywords": [
     "CMS"
   ],
+
   "author": "Neha",
   "license": "ISC",
+
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.5",
     "bcryptjs": "^2.4.3",
@@ -28,6 +31,8 @@
     "mongoose-url-slugs": "^0.1.4",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
-  }
-}
+  },
 
+  "engines": {
+    "node": "v18.7.0"
+  } }

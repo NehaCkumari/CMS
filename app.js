@@ -101,9 +101,9 @@ app.use("/admin/posts", posts);
 app.use('/admin/categories', categories);
 app.use('/admin/comments', comments);
 
-const port = process.env.PORT || 4500;
+const PORT = process.env.PORT || 4500;
 
-app.listen(port, () =>{
+app.listen(PORT, () =>{
     console.log(`listening to ${port}`);
 }); //binds itself with the specified host and port to bind and listen for any connections. localhost/4000
 

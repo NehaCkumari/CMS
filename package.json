@@ -4,6 +4,7 @@
   "description": "A CMS project",
   "main": "app.js",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node app.js"
   },
   "keywords": [

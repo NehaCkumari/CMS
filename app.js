@@ -1,4 +1,5 @@
 // Step 1: Creating a server
+require('dotenv').config();
 const express = require("express"); //by default require goes to check node_module folder for any module installation
 const app = express(); //Creating app using express
 const path = require("path");
@@ -27,6 +28,8 @@ mongoose.connect(mongoDbUrl).then((db)=>{
 //     console.log("MONGO connected");
 
 // }).catch(error=>console.log("Could not connect"));
+
+
 
 app.use(express.static(path.join(__dirname, "public"))); // we want app.js to use file inside public folder. thatis why we connected.
 

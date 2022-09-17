@@ -2,9 +2,9 @@
   "name": "yes",
   "version": "1.0.0",
   "description": "A CMS project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [
     "CMS"

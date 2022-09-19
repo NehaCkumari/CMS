@@ -23,13 +23,13 @@ The comments posted by any user is first goes to this section. The admin gives p
 
 # Steps to execute the program
 1. Install node.js into your local system.
-1. Clone the CMS repository.
-2. Install the npm package in the project environment to install other dependecies.
-2.1 Install all the dipendencies modules mentioned in the package.json files.
-3. Change the mongodb address and password as per your mongodb Atlas account in the config/database file.
+2. Clone the CMS repository.
+3. Install the npm package in the project environment to install other dependecies. <br>
+3.1 Install all the dipendencies modules mentioned in the package.json files.
+4. Change the mongodb address and password as per your mongodb Atlas account in the config/database file.
 5. Open your terminal the CMS-project folder.
-4. Run node index.js on the terminal.
-4.1 There would be masagge printed in the cosole log: listening to 4500 and Mongo connected
-5. Open the browser and search http://localhost:4500/
+6. Run node index.js on the terminal.
+6.1 There would be masagge printed in the cosole log: listening to 4500 and Mongo connected
+7. Open the browser and search http://localhost:4500/
 
 

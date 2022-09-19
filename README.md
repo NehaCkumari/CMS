@@ -7,6 +7,8 @@ CMS is a program used to manage the contents online.
 4. Mongoose
 5. Handlebars
 6. Javascript
+7. npm
+8. nodemon
 # Home Page
 ![P1](https://user-images.githubusercontent.com/51207580/190976525-a86c3e43-0ae0-4cc0-afe8-c9825b671583.jpg)
 # Admin Page - Dashboard
@@ -18,3 +20,16 @@ Summary of all the posts can be at this page. View link can be used to navigate 
 # Admin Comments Page
 The comments posted by any user is first goes to this section. The admin gives permission by switching the on/off button. Once the comment is switched "on" then only that comment can be seen by anyone on that post. 
 ![p4](https://user-images.githubusercontent.com/51207580/190976881-c506bc26-6025-430f-aa8e-fd2fb5e46213.jpg)
+
+# Steps to execute the program
+1. Install node.js into your local system.
+1. Clone the CMS repository.
+2. Install the npm package in the project environment to install other dependecies.
+2.1 Install all the dipendencies modules mentioned in the package.json files.
+3. Change the mongodb address and password as per your mongodb Atlas account in the config/database file.
+5. Open your terminal the CMS-project folder.
+4. Run node index.js on the terminal.
+4.1 There would be masagge printed in the cosole log: listening to 4500 and Mongo connected
+5. Open the browser and search http://localhost:4500/
+
+
